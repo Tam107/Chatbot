@@ -1,8 +1,16 @@
 import React from 'react'
+import {Outlet} from "react-router-dom";
 
 const DashboardLayout = () => {
     return (
-        <div>DashboardLayout</div>
+        <div className={"dashboardLayout"}>
+            <div className={"menu"}>
+                ChatList
+            </div>
+            <div className={"content"}>
+                <Outlet/>
+            </div>
+        </div>
     )
 }
 export default DashboardLayout
