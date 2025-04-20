@@ -18,7 +18,7 @@ const DashboardLayout = () => {
 
     // skeleton
     if(!isLoaded) {
-        return "Loading..."
+        return <div style={{color: "white"}}>Loading.....</div>
     }
 
     return (
