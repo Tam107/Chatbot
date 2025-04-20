@@ -4,12 +4,12 @@ import './index.css'
 
 import {createBrowserRouter, RouterProvider}  from "react-router-dom";
 import RootLayout from "./layouts/rootLayout/RootLayout.jsx";
-import Homepage from "./routes/homePage/Homepage.jsx";
-import SignInPage from "./routes/signInPage/SignInPage.jsx";
-import SignUpPage from "./routes/signUpPage/SignUpPage.jsx";
+import Homepage from "./page/homePage/Homepage.jsx";
+import SignInPage from "./page/signInPage/SignInPage.jsx";
+import SignUpPage from "./page/signUpPage/SignUpPage.jsx";
 import DashboardLayout from "./layouts/dashboardLayout/DashboardLayout.jsx";
-import DashboardPage from "./routes/dashboardPage/DashboardPage.jsx";
-import ChatPage from "./routes/chatPage/ChatPage.jsx";
+import DashboardPage from "./page/dashboardPage/DashboardPage.jsx";
+import ChatPage from "./page/chatPage/ChatPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +43,8 @@ const router = createBrowserRouter([
         ]
     }
 ])
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
